@@ -1,0 +1,83 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "name": "Install Dependencies",
+      "command": "yarn install"
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "dev": {
+      "name": "dev",
+      "command": "yarn dev",
+      "runAtStart": true
+    },
+    "build": {
+      "name": "build",
+      "command": "yarn build",
+      "runAtStart": false
+    },
+    "preview": {
+      "name": "preview",
+      "command": "yarn preview",
+      "runAtStart": false
+    },
+    "typecheck": {
+      "name": "typecheck",
+      "command": "yarn typecheck",
+      "runAtStart": false
+    },
+    "lint": {
+      "name": "lint",
+      "command": "yarn lint",
+      "runAtStart": false
+    },
+    "lint:eslint": {
+      "name": "lint:eslint",
+      "command": "yarn lint:eslint",
+      "runAtStart": false
+    },
+    "lint:stylelint": {
+      "name": "lint:stylelint",
+      "command": "yarn lint:stylelint",
+      "runAtStart": false
+    },
+    "prettier": {
+      "name": "prettier",
+      "command": "yarn prettier",
+      "runAtStart": false
+    },
+    "prettier:write": {
+      "name": "prettier:write",
+      "command": "yarn prettier:write",
+      "runAtStart": false
+    },
+    "vitest": {
+      "name": "vitest",
+      "command": "yarn vitest",
+      "runAtStart": false
+    },
+    "vitest:watch": {
+      "name": "vitest:watch",
+      "command": "yarn vitest:watch",
+      "runAtStart": false
+    },
+    "test": {
+      "name": "test",
+      "command": "yarn test",
+      "runAtStart": false
+    },
+    "storybook": {
+      "name": "storybook",
+      "command": "yarn storybook",
+      "runAtStart": false
+    },
+    "storybook:build": {
+      "name": "storybook:build",
+      "command": "yarn storybook:build",
+      "runAtStart": false
+    }
+  }
+}
