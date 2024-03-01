@@ -1,20 +1,14 @@
 import {
   MantineProvider,
-  Button,
-  Select,
   Flex,
   Card,
   Container,
   Title,
-  Text,
-  Input,
   Radio,
   Group,
   Checkbox,
 } from '@mantine/core';
 import { theme } from '../theme';
-import SelectCreatable from '../components/SelectCreatable';
-import SelectAsync from '../components/SelectAsync';
 import '../styles.css';
 import CheckboxButton from '../components/CheckboxButton';
 import RadioButton from '../components/RadioButton';
@@ -23,14 +17,21 @@ export function HomePage() {
   return (
     <MantineProvider theme={theme}>
       <Container size="xs" className="container">
-        <Card padding="xl" radius="md" w={420} className="card" withBorder>
-          <Flex direction="column" gap="md">
-            <Title order={4}>Ungrouped components seem to work fine</Title>
+        <Flex direction="column" gap="xl">
+          <Card padding="xl" radius="md" w={420} className="card" withBorder>
+            <Title order={4} mb={24}>
+              Ungrouped components seem to work fine
+            </Title>
             <Flex direction="column" gap="md" align="flex-start">
               <CheckboxButton value="red" label="Red" />
               <RadioButton value="red" label="Red" />
             </Flex>
-            <Title order={4}>Grouped components do not work</Title>
+          </Card>
+
+          <Card padding="xl" radius="md" w={420} className="card" withBorder>
+            <Title order={4} mb={24}>
+              Grouped components do not work
+            </Title>
             <Flex direction="column" gap="md" align="flex-start">
               <Checkbox.Group label="What are your favorite colors?">
                 <Group gap="xs">
@@ -48,8 +49,8 @@ export function HomePage() {
                 </Group>
               </Radio.Group>
             </Flex>
-          </Flex>
-        </Card>
+          </Card>
+        </Flex>
       </Container>
     </MantineProvider>
   );
