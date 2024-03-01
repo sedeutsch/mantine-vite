@@ -13,6 +13,7 @@
     /* background-color: var(--mantine-color-blue-filled); */
     border-color: var(--mantine-color-blue-filled);
     /* color: var(--mantine-color-white); */
+    /* color: green; */
   }
 
   & * {

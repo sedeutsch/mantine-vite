@@ -25,11 +25,13 @@ export function HomePage() {
       <Container size="xs" className="container">
         <Card padding="xl" radius="md" w={420} className="card" withBorder>
           <Flex direction="column" gap="md">
-            <Title order={3}>Favorite Colors</Title>
+            <Title order={4}>Ungrouped components seem to work fine</Title>
             <Flex direction="column" gap="md" align="flex-start">
-              <Text>Ungrouped components seem to work fine</Text>
               <CheckboxButton value="red" label="Red" />
               <RadioButton value="red" label="Red" />
+            </Flex>
+            <Title order={4}>Grouped components do not work</Title>
+            <Flex direction="column" gap="md" align="flex-start">
               <Checkbox.Group label="What are your favorite colors?">
                 <Group gap="xs">
                   <CheckboxButton value="red" label="Red" />
