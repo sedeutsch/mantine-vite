@@ -16,6 +16,7 @@ export const CheckboxButton: React.FC<CheckboxButtonProps> = ({ label, value }) 
       label={label}
       value={value}
       checked={checked}
+      description="sedeutsch@gmail.com"
       onChange={(event) => setChecked(event.currentTarget.checked)}
       wrapperProps={{
         onClick: () => setChecked((c) => !c),

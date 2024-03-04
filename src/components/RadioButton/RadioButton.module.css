@@ -13,23 +13,11 @@
     background-color: var(--mantine-color-blue-filled);
     border-color: var(--mantine-color-blue-filled);
     color: var(--mantine-color-white);
-    color: green;
+    border: 2px solid green;
   }
 
   & * {
     pointer-events: none;
     user-select: none;
   }
-}
-
-.radio {
-  /* border: 2px solid green; */
-}
-
-.icon {
-  /* background-color: red; */
-}
-
-.inner {
-  /* background-color: blue; */
 }
