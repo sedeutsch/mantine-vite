@@ -12,9 +12,4 @@
   &[data-checked] {
     border-color: var(--mantine-color-blue-filled);
   }
-
-  & * {
-    pointer-events: none;
-    user-select: none;
-  }
 }

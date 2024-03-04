@@ -16,7 +16,7 @@ import CheckboxButtonGroup from '@/components/CheckboxButtonGroup';
 import RadioButton from '../components/RadioButton';
 
 export function HomePage() {
-  const [value, setValue] = useState<string[]>([]);
+  const [value, setValue] = useState<string[]>(['red']);
 
   return (
     <MantineProvider theme={theme}>
